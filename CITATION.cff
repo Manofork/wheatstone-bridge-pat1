@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this tool in teaching material or research, please cite it as below."
+title: "Wheatstone Bridge PAT 1: Desktop Teaching Tool"
+type: software
+authors:
+  - family-names: "Maake"
+    given-names: "MJ"
+    affiliation: "Orbit TVET College, Mankwe Campus"
+version: "2.0.0"
+date-released: "2026-10-01"
+repository-code: "https://github.com/Manofork/wheatstone-bridge-pat1"
+license: "PolyForm-Noncommercial-1.0.0"
+keywords:
+  - wheatstone bridge
+  - electrical engineering education
+  - TVET
