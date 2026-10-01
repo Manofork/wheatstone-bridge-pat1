@@ -1,0 +1,54 @@
+{
+  "name": "wheatstone-bridge-pat1",
+  "version": "2.0.0",
+  "description": "Wheatstone Bridge PAT 1 Teaching Tool — Orbit TVET College · MANKWE Campus",
+  "main": "main.js",
+  "author": {
+    "name": "MJ MAAKE",
+    "email": "manoke@hotmail.co.za"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "build:win32": "electron-builder --win --ia32"
+  },
+  "build": {
+    "appId": "za.co.orbit.mankwe.wheatstone-bridge",
+    "productName": "Wheatstone Bridge PAT1",
+    "copyright": "MJ MAAKE · Orbit TVET College · MANKWE Campus",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Wheatstone Bridge PAT1",
+      "installerHeaderIcon": "",
+      "deleteAppDataOnUninstall": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.4.6",
+    "electron-builder": "^24.13.3"
+  }
+}
