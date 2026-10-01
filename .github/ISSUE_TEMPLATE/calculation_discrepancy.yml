@@ -1,0 +1,40 @@
+name: Calculation discrepancy
+description: A computed value differs from the DHET guide or a hand calculation
+labels: [calculation]
+body:
+  - type: markdown
+    attributes:
+      value: Please give the exact inputs so the result can be reproduced.
+  - type: input
+    id: inputs
+    attributes:
+      label: Inputs
+      placeholder: "Vs = 9 V, R1 = 3300 Ω, R2 = 1800 Ω, Rx = 2200 Ω, tol = 5 %, Rs = 4180 Ω"
+    validations:
+      required: true
+  - type: input
+    id: quantity
+    attributes:
+      label: Which quantity or question?
+      placeholder: "Rs range / Question 3.4.6 / voltmeter sign"
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: Value shown by the app
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected value
+    validations:
+      required: true
+  - type: textarea
+    id: working
+    attributes:
+      label: Working or reference
+      description: Your calculation, or the page in the DHET Lecturer's Guide
+    validations:
+      required: true

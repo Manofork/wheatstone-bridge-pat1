@@ -1,0 +1,45 @@
+name: Bug report
+description: Something in the app does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Help → About, or the file name you downloaded
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How are you running it?
+      options:
+        - Installer
+        - Portable exe
+        - From source (npm start)
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour and screenshots
+    validations:
+      required: true
